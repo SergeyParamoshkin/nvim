@@ -55,6 +55,9 @@ require('packer').startup(function()
   use {'neovim/nvim-lspconfig'}
   use {'tpope/vim-fugitive'}
   --use {'kabouzeid/nvim-lspinstall'}
+  use {'preservim/nerdtree'}
+  use {'ryanoasis/vim-devicons'}
+  use {'tiagofumo/vim-nerdtree-syntax-highlight'}
   use {'williamboman/nvim-lsp-installer'}
   use {'fatih/vim-go'}
   use {'neoclide/coc.nvim', branch = 'master', run = 'yarn install --frozen-lockfile'}
@@ -270,3 +273,5 @@ g.dracula_colorterm = 1
 vim.cmd[[colorscheme tokyonight]]
 
 require'hardline'.setup{theme='nord',}
+
+
